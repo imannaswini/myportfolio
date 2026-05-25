@@ -1,16 +1,174 @@
-# React + Vite
+# 🚀 Mannaswini Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern futuristic developer portfolio built with React.js, Tailwind CSS, and Framer Motion showcasing full stack development, cloud technologies, open-source contributions, and AI-focused projects.
 
-Currently, two official plugins are available:
+🌐 Live Portfolio: https://mannaswini.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Modern futuristic UI
+* Glassmorphism design system
+* Fully responsive layout
+* Dark/Light theme support
+* Smooth Framer Motion animations
+* Dynamic project showcase
+* GitHub integration
+* Functional contact form using Web3Forms
+* Resume integration
+* Mobile-first responsive design
+* Optimized production deployment
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+* Tailwind CSS
+* Framer Motion
+
+### Backend & APIs
+
+* Web3Forms API
+* GitHub API
+
+### Tools & Platforms
+
+* Git
+* GitHub
+* VS Code
+* Vercel
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+├── assets/
+├── components/
+├── sections/
+├── hooks/
+├── services/
+├── context/
+├── data/
+└── utils/
+```
+
+---
+
+## 🚀 Featured Projects
+
+### 🛡️ COASTGUARD
+
+Enterprise coastal risk intelligence platform with real-time meteorological analytics and geospatial dashboards.
+
+### 💡 HerPulse AI
+
+AI-powered women’s health platform with smart cycle tracking and PCOD risk analysis.
+
+### 🤖 JobFit-AI
+
+AI-driven job and candidate matching engine built using Python and SQLite.
+
+### ⚡ SPARK
+
+Role-based task management platform with JWT authentication and REST APIs.
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/imannaswini/portfolio.git
+```
+
+Navigate into the project directory:
+
+```bash
+cd portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_WEB3FORMS_ACCESS_KEY=your_access_key
+```
+
+---
+
+## 📬 Contact Form
+
+The portfolio uses Web3Forms for real-time contact form functionality.
+
+Features:
+
+* Email validation
+* Success/error notifications
+* Loading states
+* Secure environment variable integration
+
+---
+
+## 🌐 Deployment
+
+This portfolio is deployed on Vercel.
+
+To deploy:
+
+```bash
+npm run build
+```
+
+Then connect the repository to Vercel.
+
+---
+
+## 📈 Future Improvements
+
+* Blog integration
+* Dynamic CMS support
+* Advanced GitHub analytics
+* AI chatbot assistant
+* Project filtering system
+* Performance optimization
+
+---
+
+## 🤝 Connect With Me
+
+* GitHub: https://github.com/imannaswini
+* LinkedIn: https://linkedin.com/in/mannaswini
+* Portfolio: https://mannaswini.vercel.app
+
+---
+
+## ⭐ Support
+
+If you like this portfolio, feel free to star the repository and connect with me!
+
+---
+
+Built with ❤️ by Mannaswini
