@@ -2,7 +2,8 @@ import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { portfolioData } from '../data/portfolioData.js';
 import { FiEye, FiArrowRight, FiGithub } from 'react-icons/fi';
-import { FaGithub, FaLinkedin, FaHackerrank } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaHackerrank, FaEnvelope } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Hero = () => {
   const { name, tagline, description, miniStatus, socials } = portfolioData.hero;
@@ -122,13 +123,19 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="flex items-center gap-6 mt-6"
           >
-            <a href={socials.github} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform">
+            <a href={socials.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform">
               <FaGithub size={24} />
             </a>
-            <a href={socials.linkedin} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#0077b5] transition-colors hover:scale-110 transform">
+            <a href={socials.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-[#0077b5] transition-colors hover:scale-110 transform">
               <FaLinkedin size={24} />
             </a>
-            <a href={socials.hackerrank} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#2ec866] transition-colors hover:scale-110 transform">
+            <a href={socials.twitter} target="_blank" rel="noreferrer" aria-label="Twitter/X" className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform">
+              <FaXTwitter size={24} />
+            </a>
+            <a href={socials.email} aria-label="Email" className="text-gray-400 hover:text-red-400 transition-colors hover:scale-110 transform">
+              <FaEnvelope size={24} />
+            </a>
+            <a href={socials.hackerrank} target="_blank" rel="noreferrer" aria-label="HackerRank" className="text-gray-400 hover:text-[#2ec866] transition-colors hover:scale-110 transform">
               <FaHackerrank size={24} />
             </a>
           </motion.div>

@@ -7,6 +7,7 @@ export const personalInfo = {
   socials: {
     github: "https://github.com/imannaswini",
     linkedin: "https://linkedin.com/mannaswini",
+    twitter: "https://x.com/i_mannas",
   }
 };
 
