@@ -372,7 +372,7 @@ export const portfolioData = {
 
       period: "2023 - 2027",
 
-      cgpa: "8.0 CGPA",
+      cgpa: "8.0",
 
       details:
         "Focused on Full Stack Development, Cloud Computing, and Artificial Intelligence.",

@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import SectionHeading from '../components/SectionHeading.jsx';
 import { portfolioData } from '../data/portfolioData.js';
-import { FiMail, FiMapPin, FiSend, FiEye, FiLoader, FiCheckCircle } from 'react-icons/fi';
+import { FiSend, FiLoader, FiCheckCircle } from 'react-icons/fi';
 
 const Contact = () => {
   const formRef = useRef();
@@ -47,57 +47,15 @@ const Contact = () => {
       <div className="container mx-auto">
         <SectionHeading title="Get In Touch" subtitle="Have a question or want to work together?" />
         
-        <div className="max-w-5xl mx-auto grid md:grid-cols-5 gap-12 mt-12">
+        <div className="max-w-3xl mx-auto mt-12">
           
-          {/* Contact Info */}
-          <motion.div 
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="md:col-span-2 flex flex-col gap-8"
-          >
-            <div className="glass-card p-6 flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400 shrink-0">
-                <FiMail size={24} />
-              </div>
-              <div>
-                <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-1">Email</h4>
-                <a href={portfolioData.hero.socials.email} className="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors break-all">
-                  {portfolioData.hero.socials.email.replace('mailto:', '')}
-                </a>
-              </div>
-            </div>
-            
-            <div className="glass-card p-6 flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 shrink-0">
-                <FiMapPin size={24} />
-              </div>
-              <div>
-                <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-1">Location</h4>
-                <p className="text-gray-600 dark:text-gray-400">
-                  Global / Remote
-                </p>
-              </div>
-            </div>
-
-            <a 
-              href={portfolioData.hero.socials.resume} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="mt-4 px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold hover:from-blue-500 hover:to-purple-500 transition-all flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(37,99,235,0.4)] hover:shadow-[0_0_25px_rgba(37,99,235,0.6)] hover:scale-105 border border-white/10 w-full md:w-auto"
-            >
-              <FiEye size={18} /> View Resume
-            </a>
-          </motion.div>
-
           {/* Contact Form */}
           <motion.div 
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="md:col-span-3 glass-card p-8"
+            className="glass-card p-8"
           >
             <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6">
               {/* Web3Forms Subject Config */}
@@ -113,7 +71,7 @@ const Contact = () => {
                     id="name" 
                     required 
                     className="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-gray-900 dark:text-white"
-                    placeholder="John Doe"
+                    placeholder="Mannaswini"
                   />
                 </div>
                 <div>
@@ -124,7 +82,7 @@ const Contact = () => {
                     id="email" 
                     required 
                     className="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-gray-900 dark:text-white"
-                    placeholder="john@example.com"
+                    placeholder="mann@gmail.com"
                   />
                 </div>
               </div>
