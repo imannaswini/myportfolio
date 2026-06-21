@@ -34,7 +34,7 @@ export const portfolioData = {
       twitter: "https://x.com/i_mannas",
       email: "mailto:iammannaswini@gmail.com",
       hackerrank: "https://www.hackerrank.com/profile/iammannas_24",
-      resume: "https://docs.google.com/document/d/1LZs7u4JHJwPGoQ4y6Yez_9_q2__u16i3p9k8df3lrL4/edit?usp=sharing",
+      resume: "https://drive.google.com/drive/folders/1G__j5CR_oKI9BoKZuhz3SY_qJxcub2jH?usp=sharing",
     },
   },
 
