@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "P A Mannaswini",
   role: "Full Stack Developer & Aspiring AI Engineer",
-  bio: "Building scalable full stack applications, cloud-powered platforms, and modern digital experiences.",
+  bio: "Creating what's next.",
   email: "iammannaswini@gmail.com",
   location: "Bangalore, India",
   socials: {
