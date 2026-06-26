@@ -24,9 +24,7 @@ export const portfolioData = {
     tagline: "Full Stack Developer & Aspiring AI Engineer",
 
     description:
-      "Full Stack Developer passionate about building scalable web applications, AI-powered platforms, and impactful digital experiences.",
-
-    miniStatus: "Currently Learning GenAI & Cloud",
+"Every Great Product Starts with Why?",
 
     socials: {
       github: "https://github.com/imannaswini",
@@ -40,11 +38,9 @@ export const portfolioData = {
 
   about: {
     introduction:
-      "Computer Science undergraduate passionate about Full Stack Development, Generative AI, and Cloud Computing. Experienced in building scalable web applications, authentication systems, REST APIs, and AI-powered platforms through hackathons, open-source programs, and academic projects.",
-
-    goals:
-      "My goal is to become an AI Engineer and build intelligent systems that combine modern web technologies with machine learning and cloud infrastructure.",
-  },
+        "Fueled by coffee, curiosity, and countless Git commits, I spend my time building products that solve real problems. I enjoy the balance between logic and creativity—designing interfaces people love while engineering systems that scale behind the scenes. Whether it's React, Node.js, AI, or cloud technologies, I'm happiest when I'm building something that didn't exist yesterday."
+    vision:
+"I don't see AI replacing creativity—I see it amplifying it. My vision is to build products where human imagination and intelligent systems work together to create experiences that neither could achieve alone",  },
 
   skills: [
     {
