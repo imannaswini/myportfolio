@@ -23,7 +23,7 @@ const Section = ({ children, id, className, title, subtitle }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
-                className="text-3xl md:text-5xl font-bold text-white mb-4"
+                className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4"
               >
                 {title}
               </motion.h2>

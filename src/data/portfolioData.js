@@ -29,7 +29,6 @@ export const portfolioData = {
     socials: {
       github: "https://github.com/imannaswini",
       linkedin: "https://linkedin.com/in/mannaswini",
-      twitter: "https://x.com/i_mannas",
       email: "mailto:iammannaswini@gmail.com",
       hackerrank: "https://www.hackerrank.com/profile/iammannas_24",
       resume: "https://drive.google.com/drive/folders/1G__j5CR_oKI9BoKZuhz3SY_qJxcub2jH?usp=sharing",

@@ -7,7 +7,7 @@ const Experience = () => {
   return (
     <section id="experience" className="py-20 px-6 md:px-12 relative z-10 bg-white/30 dark:bg-gray-900/30">
       <div className="container mx-auto max-w-4xl">
-        <SectionHeading title="Experience & Contributions" subtitle="My journey in clubs, open source, and hackathons." />
+        <SectionHeading title="Contributions" subtitle="My journey in clubs, open source, and hackathons." />
         
         <div className="mt-12 relative border-l-2 border-blue-500/30 dark:border-blue-500/20 ml-6 md:ml-0 md:border-l-0">
           {/* Desktop central line */}

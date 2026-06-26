@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { FiSun, FiMoon, FiMenu, FiX, FiEye } from 'react-icons/fi';
 import { useTheme } from '../context/ThemeContext.jsx';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { portfolioData } from '../data/portfolioData.js';
 
 const navLinks = [
@@ -10,7 +10,7 @@ const navLinks = [
   { name: 'About', to: 'about' },
   { name: 'Skills', to: 'skills' },
   { name: 'Projects', to: 'projects' },
-  { name: 'Experience', to: 'experience' },
+  { name: 'Contributions', to: 'experience' },
   { name: 'Contact', to: 'contact' },
 ];
 
@@ -68,10 +68,21 @@ const Navbar = () => {
           <div className="flex items-center gap-4 border-l border-gray-300 dark:border-gray-700 pl-4 lg:pl-6">
             <button 
               onClick={toggleTheme} 
-              className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors text-gray-700 dark:text-gray-300"
+              className="relative w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors text-gray-700 dark:text-gray-300 overflow-hidden"
               aria-label="Toggle Theme"
             >
-              {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
+              <AnimatePresence mode="wait" initial={false}>
+                <motion.div
+                  key={isDarkMode ? 'dark' : 'light'}
+                  initial={{ y: -20, opacity: 0, rotate: -90 }}
+                  animate={{ y: 0, opacity: 1, rotate: 0 }}
+                  exit={{ y: 20, opacity: 0, rotate: 90 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute"
+                >
+                  {isDarkMode ? <FiSun size={20} className="text-yellow-400" /> : <FiMoon size={20} className="text-blue-600" />}
+                </motion.div>
+              </AnimatePresence>
             </button>
             <a 
               href={portfolioData.hero.socials.resume} 
@@ -88,9 +99,21 @@ const Navbar = () => {
         <div className="md:hidden flex items-center gap-4">
           <button 
             onClick={toggleTheme} 
-            className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors text-gray-700 dark:text-gray-300"
+            className="relative w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors text-gray-700 dark:text-gray-300 overflow-hidden"
+            aria-label="Toggle Theme"
           >
-            {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.div
+                key={isDarkMode ? 'dark' : 'light'}
+                initial={{ y: -20, opacity: 0, rotate: -90 }}
+                animate={{ y: 0, opacity: 1, rotate: 0 }}
+                exit={{ y: 20, opacity: 0, rotate: 90 }}
+                transition={{ duration: 0.2 }}
+                className="absolute"
+              >
+                {isDarkMode ? <FiSun size={20} className="text-yellow-400" /> : <FiMoon size={20} className="text-blue-600" />}
+              </motion.div>
+            </AnimatePresence>
           </button>
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
